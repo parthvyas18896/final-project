@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- bootstrap cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+	<!-- font awesome cdn -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<!-- style.css -->
+	<link rel="stylesheet" type="text/css" href="/CSS/style.css"/>
+	<!-- jquery cdn -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  
+
+    <link rel ="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+    
+<!-- <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+
+    
+</head>
+<body>
+    
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 navbar">
+				<a href="/index.html" class="logo navbar-brand text-white offset-md-2"><img src="images/logo.png" width="80"  alt="">
+				</a>
+				<ul class="nav">
+					<li class="nav-item active"><a href="#" class="nav-link">Moment</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">Tips</a></li>
+					<li class="nav-item"><a href="./aboutus.html" class="nav-link">About us</a></li>
+					<li class="nav-item"><a href="./login.html" class="nav-link"> Login </a></li>
+					<li class="nav-item"><a href="./signup.html" class="nav-link"> Sign up </a></li>
+				</ul>
+			</div>
+
+    <div class="container">     
+      <div id="error" class="form__message"></div>
+         
+      <div id="login-reset"> <form class='form' action="/user/create" method="POST" name="signup" id="createAccount">
+        <h1 class="form__title">Create Account</h1>
+       <!-- <div class="form__message form_message--error"></div> -->
+       <div class="form__input-group">
+        
+         <input type='text' name="username" class="form__input"  id="signupUsername" autofocus placeholder="Username" >
+         
+<!--          
+         <div id="user" class="form__input-error-message"></div> -->
+       </div> 
+       <div class="form__input-group">
+        <input type='text' name="email" id="email" class="form__input" autofocus placeholder="Email">
+       <!-- <div id="signemail" class="form__input-error-message"></div>  -->
+      </div> 
+       <div class="form__input-group">
+         <input type='password' class="form__input" id="password" name="password" autofocus placeholder="Password">
+        <div class="form__input-error-message"></div> 
+       </div> 
+       <div class="form__input-group">
+        <input type='password' class="form__input" name ="conpassword" id="password2"  autofocus placeholder="Confirm password">
+       <!-- <div class="form__input-error-message"></div>  -->
+      </div>
+       <button class="form__button" type="submit" >Submit</button>
+       
+       <p class="form_text">
+         <a  class="form__link" href="./login.html"  id="linklogin">Already have an account? Sign in</a>
+       </p>
+     </form>
+    </div>
+    </div>
+    <script src="JS/login.js"></script>
+  </body>
+</html>
+
+    
+
+</html>
